@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(257, 40%, 49%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: white;
+    min-height: 100vh;
+}
+.container {
+    background: url(./images/bg-mobile.svg) no-repeat;
+    background-position: 50% 0;
+   text-align: center;
+   width: 100vw;
+}
+.navbar {
+    text-align: left;
+    padding: 1.5em;
+}
+.header {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.description {
+   padding: 1.5em;
+   font-size: 15px;
+   line-height: 1.5;
+}
+.logo {
+    width: 40%;
+    height: 40%;
+    padding-bottom: 2em;
+}
+.mockup {
+    height: 30%;
+    width: 85%;
+    padding-bottom: 3.5em;
+}
+.registration {
+    padding: 1em 5em;
+    border-radius: 50px;
+    border: 1px solid hsl(257, 40%, 49%);
+    color:hsl(257, 40%, 49%);
+}
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 1.5em;
+}
+.social {
+    border: 1px solid white;
+    padding: 0.5em;
+    border-radius: 90%;
+    font-size: 10px;
+    width: 2.5em;
+    height: 2.5em;
+}
+#middle-social {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); }
