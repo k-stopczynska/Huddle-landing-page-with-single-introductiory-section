@@ -17,6 +17,7 @@ body {
 .container {
     background: url(./images/bg-mobile.svg) no-repeat;
     background-position: 50% 0;
+    background-size: 100%;
    text-align: center;
    width: 100vw;
 }
@@ -52,6 +53,11 @@ body {
     border: 1px solid hsl(257, 40%, 49%);
     color:hsl(257, 40%, 49%);
 }
+.registration:hover {
+   background: hsl(300, 69%, 71%);
+   color: white;
+   cursor: pointer;
+}
 .socials {
     list-style: none;
     display: flex;
@@ -68,6 +74,11 @@ body {
     width: 2.5em;
     height: 2.5em;
 }
+.social:hover {
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    border: 1px solid hsl(300, 69%, 71%);
+}
 #middle-social {
     margin-left: 1em;
     margin-right: 1em;
@@ -79,4 +90,67 @@ body {
     margin-bottom: 10px;
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); }
+    color: whitesmoke; }
+    
+@media (min-width: 900px) {
+    body {
+        max-height: 100vh;
+    }
+    .container {
+        background: url(./images/bg-desktop.svg) no-repeat;
+        background-position: 10% 100%;
+        max-height: 100vh;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+    .navbar {
+        padding: 0;
+        align-items: center;
+    }
+    .logo {
+        height: 55%;
+        width: 12rem;
+        padding-bottom: 0;
+       margin: 2em 0 4em 5em;
+    }
+    .image-container {
+        align-self: center;
+    }
+    .mockup {
+        height: 75%;
+        width: 80%;
+        padding-bottom: 0;
+    }
+    .header-container {
+        text-align: left;
+        padding-right: 2.4em;
+        padding-top: 3em;
+    }
+    .header,
+    .description {
+        padding-left: 0;
+    }
+    .header {
+        font-size: 2.5rem;
+    }
+    .description {
+        font-size: 1.05rem;
+    }
+    .registration {
+        padding: 1em 4em;
+        font-size: 1.1rem;
+        box-shadow: 0px 1px 3px 0px black;
+    }
+    .socials {
+        justify-content: right;
+        padding: 2em;
+        padding-right: 5em;
+        margin-bottom: 2em;
+    }
+    .social {
+        font-size: 1rem;
+    }
+}

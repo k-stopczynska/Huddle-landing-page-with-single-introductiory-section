@@ -8,36 +8,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <div class="container">
-    <nav class="navbar">
+  <main class="container">
+    <nav class="navbar grid-col-span-2">
       <img class="logo" src="./images/logo.svg" alt="logo">
     </nav>
-    <img class="mockup" src="./images/illustration-mockups.svg" alt="">
-    <header class="header-container"></header>
+    <div class="image-container">
+      <img class="mockup" src="./images/illustration-mockups.svg" alt="">
+    </div>
+    <header class="header-container">
       <h1 class="header">Build The Community Your Fans Will Love</h1>
       <p class="description">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
       Create connections with your users as you engage in genuine discussion. </p>
-    </header>
 
-    <button class="registration">Register</button>
-    <ul class="socials">
+      <button class="registration">Register</button>
+    </header>
+    <ul class="socials grid-col-span-2">
       <li class="social"><i class="fa-brands fa-facebook-f"></i></li>
       <li class="social" id="middle-social"><i class="fa-brands fa-twitter"></i></li>
       <li class="social"><i class="fa-brands fa-instagram"></i></li>
     </ul>
-  </div>
+  </main>
   <footer class="footer">
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/k-stopczynska">k-stopczynska</a>.
     </p>
   </footer>
 </body>
